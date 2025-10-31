@@ -1,0 +1,154 @@
+/content/nanoGPT/train.py:196: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == 'float16'))
+Overriding: device = cuda
+Overriding: compile = False
+Overriding: eval_only = False
+Overriding: dataset = shakespeare_char
+Overriding: out_dir = out/member2/bs64_L6_H8_E256_B8_D0.2_I1000
+Overriding: block_size = 64
+Overriding: n_layer = 6
+Overriding: n_head = 8
+Overriding: n_embd = 256
+Overriding: batch_size = 8
+Overriding: dropout = 0.2
+Overriding: max_iters = 120
+Overriding: eval_interval = 40
+Overriding: eval_iters = 50
+Overriding: always_save_checkpoint = False
+Overriding: init_from = scratch
+Overriding: bias = False
+tokens per iteration will be: 20,480
+found vocab_size = 65 (inside data/shakespeare_char/meta.pkl)
+Initializing a new model from scratch
+number of parameters: 4.74M
+num decayed parameter tensors: 26, with 4,751,616 parameters
+num non-decayed parameter tensors: 13, with 3,328 parameters
+using fused AdamW: True
+step 0: train loss 4.2420, val loss 4.2370
+iter 0: loss 4.2390, time 1425.68ms, mfu -100.00%
+iter 1: loss 4.2070, time 688.30ms, mfu -100.00%
+iter 2: loss 4.2324, time 767.30ms, mfu -100.00%
+iter 3: loss 4.2354, time 843.93ms, mfu -100.00%
+iter 4: loss 4.2262, time 633.66ms, mfu -100.00%
+iter 5: loss 4.2063, time 593.13ms, mfu 0.33%
+iter 6: loss 4.1853, time 611.68ms, mfu 0.33%
+iter 7: loss 4.1869, time 605.21ms, mfu 0.33%
+iter 8: loss 4.1634, time 607.59ms, mfu 0.33%
+iter 9: loss 4.1412, time 605.61ms, mfu 0.33%
+iter 10: loss 4.0973, time 588.40ms, mfu 0.33%
+iter 11: loss 4.0929, time 595.21ms, mfu 0.33%
+iter 12: loss 4.0648, time 592.83ms, mfu 0.33%
+iter 13: loss 4.0442, time 609.81ms, mfu 0.33%
+iter 14: loss 4.0498, time 591.38ms, mfu 0.33%
+iter 15: loss 3.9480, time 608.86ms, mfu 0.32%
+iter 16: loss 3.9522, time 639.15ms, mfu 0.32%
+iter 17: loss 3.9193, time 587.67ms, mfu 0.32%
+iter 18: loss 3.9195, time 653.94ms, mfu 0.32%
+iter 19: loss 3.8934, time 572.33ms, mfu 0.32%
+iter 20: loss 3.8168, time 694.75ms, mfu 0.32%
+iter 21: loss 3.7867, time 800.37ms, mfu 0.31%
+iter 22: loss 3.8163, time 898.81ms, mfu 0.30%
+iter 23: loss 3.7214, time 604.06ms, mfu 0.30%
+iter 24: loss 3.7261, time 615.77ms, mfu 0.30%
+iter 25: loss 3.6718, time 591.06ms, mfu 0.31%
+iter 26: loss 3.7481, time 594.87ms, mfu 0.31%
+iter 27: loss 3.7001, time 599.31ms, mfu 0.31%
+iter 28: loss 3.6483, time 605.45ms, mfu 0.31%
+iter 29: loss 3.6131, time 603.79ms, mfu 0.31%
+iter 30: loss 3.5475, time 595.81ms, mfu 0.31%
+iter 31: loss 3.6334, time 603.95ms, mfu 0.31%
+iter 32: loss 3.5619, time 615.87ms, mfu 0.31%
+iter 33: loss 3.5498, time 595.69ms, mfu 0.32%
+iter 34: loss 3.5308, time 627.28ms, mfu 0.32%
+iter 35: loss 3.5809, time 587.40ms, mfu 0.32%
+iter 36: loss 3.5146, time 599.22ms, mfu 0.32%
+iter 37: loss 3.4491, time 591.17ms, mfu 0.32%
+iter 38: loss 3.4240, time 617.56ms, mfu 0.32%
+iter 39: loss 3.5436, time 707.83ms, mfu 0.31%
+step 40: train loss 3.4534, val loss 3.4955
+saving checkpoint to out/member2/bs64_L6_H8_E256_B8_D0.2_I1000
+iter 40: loss 3.4930, time 1688.40ms, mfu 0.29%
+iter 41: loss 3.5066, time 601.67ms, mfu 0.30%
+iter 42: loss 3.4293, time 593.22ms, mfu 0.30%
+iter 43: loss 3.4212, time 619.27ms, mfu 0.30%
+iter 44: loss 3.4862, time 587.25ms, mfu 0.30%
+iter 45: loss 3.4449, time 595.75ms, mfu 0.31%
+iter 46: loss 3.4632, time 588.49ms, mfu 0.31%
+iter 47: loss 3.4945, time 585.86ms, mfu 0.31%
+iter 48: loss 3.5291, time 611.84ms, mfu 0.31%
+iter 49: loss 3.4760, time 595.93ms, mfu 0.31%
+iter 50: loss 3.3499, time 588.38ms, mfu 0.32%
+iter 51: loss 3.3792, time 602.64ms, mfu 0.32%
+iter 52: loss 3.3419, time 587.31ms, mfu 0.32%
+iter 53: loss 3.3753, time 628.45ms, mfu 0.32%
+iter 54: loss 3.4020, time 589.84ms, mfu 0.32%
+iter 55: loss 3.2580, time 599.26ms, mfu 0.32%
+iter 56: loss 3.3491, time 607.83ms, mfu 0.32%
+iter 57: loss 3.3075, time 698.00ms, mfu 0.31%
+iter 58: loss 3.3262, time 797.99ms, mfu 0.31%
+iter 59: loss 3.3548, time 844.05ms, mfu 0.30%
+iter 60: loss 3.2970, time 627.89ms, mfu 0.30%
+iter 61: loss 3.2270, time 608.19ms, mfu 0.30%
+iter 62: loss 3.3441, time 627.05ms, mfu 0.30%
+iter 63: loss 3.2423, time 594.31ms, mfu 0.31%
+iter 64: loss 3.2726, time 637.33ms, mfu 0.31%
+iter 65: loss 3.2097, time 599.62ms, mfu 0.31%
+iter 66: loss 3.2753, time 600.13ms, mfu 0.31%
+iter 67: loss 3.1931, time 604.52ms, mfu 0.31%
+iter 68: loss 3.0747, time 592.42ms, mfu 0.31%
+iter 69: loss 3.2439, time 605.40ms, mfu 0.31%
+iter 70: loss 3.1313, time 592.38ms, mfu 0.31%
+iter 71: loss 3.1622, time 615.75ms, mfu 0.31%
+iter 72: loss 3.1229, time 594.84ms, mfu 0.32%
+iter 73: loss 3.1725, time 608.37ms, mfu 0.32%
+iter 74: loss 3.1637, time 602.27ms, mfu 0.32%
+iter 75: loss 3.1112, time 587.13ms, mfu 0.32%
+iter 76: loss 3.0682, time 715.83ms, mfu 0.31%
+iter 77: loss 3.0583, time 771.66ms, mfu 0.31%
+iter 78: loss 3.0606, time 838.38ms, mfu 0.30%
+iter 79: loss 3.0342, time 611.42ms, mfu 0.30%
+step 80: train loss 2.9781, val loss 2.9907
+saving checkpoint to out/member2/bs64_L6_H8_E256_B8_D0.2_I1000
+iter 80: loss 3.0662, time 1302.28ms, mfu 0.29%
+iter 81: loss 3.0717, time 598.01ms, mfu 0.29%
+iter 82: loss 3.0648, time 580.76ms, mfu 0.29%
+iter 83: loss 3.0748, time 604.06ms, mfu 0.30%
+iter 84: loss 2.9827, time 602.74ms, mfu 0.30%
+iter 85: loss 3.0147, time 605.97ms, mfu 0.30%
+iter 86: loss 3.0358, time 605.22ms, mfu 0.30%
+iter 87: loss 3.0703, time 587.12ms, mfu 0.31%
+iter 88: loss 3.0044, time 596.93ms, mfu 0.31%
+iter 89: loss 3.0102, time 593.37ms, mfu 0.31%
+iter 90: loss 2.9763, time 604.84ms, mfu 0.31%
+iter 91: loss 2.9882, time 604.27ms, mfu 0.31%
+iter 92: loss 3.0604, time 605.99ms, mfu 0.31%
+iter 93: loss 2.9284, time 601.23ms, mfu 0.31%
+iter 94: loss 2.9830, time 711.32ms, mfu 0.31%
+iter 95: loss 2.9081, time 773.30ms, mfu 0.30%
+iter 96: loss 3.0239, time 854.07ms, mfu 0.30%
+iter 97: loss 2.8814, time 602.66ms, mfu 0.30%
+iter 98: loss 2.9956, time 590.56ms, mfu 0.30%
+iter 99: loss 2.9774, time 599.34ms, mfu 0.30%
+iter 100: loss 2.8615, time 586.89ms, mfu 0.31%
+iter 101: loss 2.9314, time 616.43ms, mfu 0.31%
+iter 102: loss 2.7724, time 598.95ms, mfu 0.31%
+iter 103: loss 2.9134, time 592.20ms, mfu 0.31%
+iter 104: loss 2.8959, time 604.26ms, mfu 0.31%
+iter 105: loss 2.8522, time 582.09ms, mfu 0.31%
+iter 106: loss 2.8620, time 596.06ms, mfu 0.32%
+iter 107: loss 2.9280, time 575.14ms, mfu 0.32%
+iter 108: loss 2.8379, time 628.52ms, mfu 0.32%
+iter 109: loss 2.8094, time 602.88ms, mfu 0.32%
+iter 110: loss 2.8663, time 590.70ms, mfu 0.32%
+iter 111: loss 2.8420, time 632.88ms, mfu 0.32%
+iter 112: loss 2.9076, time 600.07ms, mfu 0.32%
+iter 113: loss 2.8826, time 701.98ms, mfu 0.31%
+iter 114: loss 2.8326, time 777.64ms, mfu 0.31%
+iter 115: loss 2.8373, time 856.84ms, mfu 0.30%
+iter 116: loss 2.7347, time 605.39ms, mfu 0.30%
+iter 117: loss 2.8711, time 631.24ms, mfu 0.30%
+iter 118: loss 2.8059, time 593.09ms, mfu 0.30%
+iter 119: loss 2.8018, time 601.17ms, mfu 0.31%
+step 120: train loss 2.7769, val loss 2.7773
+saving checkpoint to out/member2/bs64_L6_H8_E256_B8_D0.2_I1000
+iter 120: loss 2.8240, time 1281.05ms, mfu 0.29%
